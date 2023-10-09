@@ -14,8 +14,4 @@ def get():
 def post():
     return "<h1>Hello</h1>"
 
-@app.errorhandler(404)
-def page_not_found(_):
-    return redirect("/")
-
 if __name__ == "__main__": app.run()
